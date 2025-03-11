@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biking Technical Vocational HS News</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEV7xrvU5PgGm-KpH8y5O7Lyk-WZACKbVWAQ&s" alt="School Logo" class="logo">
+        <h1>Biking Technical Vocational High School News</h1>
+    </header>
+    
+    <section id="post-form">
+        <h2>Submit a News Post</h2>
+        <div id="news-list"></div>
+        <h3>Add News</h3>
+        <input type="text" id="news-title" placeholder="News Title">
+        <textarea id="news-content" placeholder="Write your news here..."></textarea>
+        <input type="file" id="news-image" accept="image/*">
+        <button onclick="submitPost()">Submit</button>
+    </section>
+    
+    <section id="announcements">
+        <h2>Announcements</h2>
+        <div id="announcement-list"></div>
+        <h3>Add Announcement</h3>
+        <input type="text" id="announcement-title" placeholder="Announcement Title">
+        <textarea id="announcement-content" placeholder="Announcement Details..."></textarea>
+        <input type="file" id="announcement-image" accept="image/*">
+        <button onclick="submitAnnouncement()">Submit</button>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="event-list"></div>
+        <h3>Add Event</h3>
+        <input type="text" id="event-title" placeholder="Event Title">
+        <input type="date" id="event-date">
+        <textarea id="event-details" placeholder="Event Details..."></textarea>
+        <input type="file" id="event-image" accept="image/*">
+        <button onclick="submitEvent()">Submit</button>
+    </section>
+</body>
+</html>
